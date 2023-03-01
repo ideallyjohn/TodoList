@@ -1,6 +1,6 @@
 /* Add some custom CSS styles to make the app look modern and smooth */
 body {
-  margin: 0;
+    margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
@@ -8,53 +8,72 @@ body {
 .container {
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 200px;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: center;
 }
 
-form {
+.app__header-icon {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-right: 1rem;
+}
+
+.app__title {
+  font-family: 'Helvetica';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.2rem;
+}
+
+.app__form {
   display: flex;
   margin-bottom: 2rem;
 }
 
-input[type="text"] {
+.app__form-input {
   flex: 1;
   padding: 1rem;
   font-size: 1rem;
+  margin-right: 30px;
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;
 }
 
-button[type="submit"] {
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
-  background-color: #ff9933;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 5px 0 #cc7a00;
-  transition: box-shadow 0.3s;
+.app__form-button {
+height: 40px;
+width: 80px;
+font-size: 1rem;
+font-weight: bold;
+border: none;
+background-color: #4CAF50;
+color: #fff;
+cursor: pointer;
+border-radius: 5px;
+box-shadow: 0 5px 0 #3E8E41;
+transition: box-shadow 0.3s;
 }
 
-button[type="submit"]:hover {
-  box-shadow: 0 3px 0 #cc7a00;
+.app__form-button:hover {
+box-shadow: 0 3px 0 #3E8E41;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 2px solid #ccc;
+
 }
 
 li {
@@ -70,7 +89,7 @@ li:last-of-type {
   border-bottom: none;
 }
 
-.delete-btn {
+.app__list-delete-button {
   padding: 0.5rem;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -80,7 +99,7 @@ li:last-of-type {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.delete-btn:hover {
+.app__list-delete-button:hover {
   background-color: #ccc;
   color: #fff;
 }
